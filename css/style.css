@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+
+:root {
+    --font: 'Solitreo';
+    --bg: #395144;
+    --bg-secundary: #AA8B56;
+    --color: #F8EDE3;
+    --btn: #913131;
+}
+
+body {
+    background: var(--bg);
+    font-family: var(--font);
+    font-size: 18px;
+    color: var(--color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container__title {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em 0 0.5em;
+    font-weight: 600;
+}
+
+.container__box-title {
+    text-transform: uppercase;
+}
+
+.container__box {
+    background: var(--bg-secundary);
+    padding: 1.5em 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container__box-text {
+    margin-top: 1em;
+}
+
+.container__box-exemple {
+    margin: 0.4em 0 1em;
+}
+
+.container__btn {
+    background: var(--btn);
+    border-radius: 5px;
+    padding: 0.3em 3em;
+
+}
+
+.container__result {
+    display: grid;
+    justify-content: center;
+}
+
+.container__result-title {
+    text-align: center;
+    margin: 1em 0 0.5em;
+}
+
+.container__result-text {
+    border: 2px solid var(--color);
+    padding: 0.5em 1em;
+    width: auto;
+    text-align: center;
+    word-break: break-all;
+
+}
+
+.container__items {
+    display: grid;
+    justify-content: center;
+    margin: 1.5em 2em;
+}
+
+.items::before {
+    content: "\2771";
+}
+
+.items {
+    background: var(--bg-secundary);
+    margin: 0.3em 0;
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
+    display: flex;
+    gap: 1em;
+    align-items: center;   
+}
+
+.items button{
+    margin-left: auto;
+    padding: 3px 5px 0 0;
+}
