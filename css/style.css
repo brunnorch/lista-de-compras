@@ -18,6 +18,8 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container__title {
@@ -37,6 +39,7 @@ body {
     padding: 1.5em 1em;
     text-align: center;
     border-radius: 5px;
+    width: 83%;
 }
 
 .container__box-text {
@@ -90,10 +93,50 @@ body {
     border-radius: 5px;
     display: flex;
     gap: 1em;
-    align-items: center;   
+    align-items: center;
 }
 
-.items button{
+.items button {
     margin-left: auto;
     padding: 3px 5px 0 0;
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__title {
+        font-size: 3em;
+    }
+
+    .container__box {
+        width: 40%;
+    }
+
+    .container__box-title {
+        font-size: 1.8em;
+    }
+
+    .container__box-text {
+        font-size: 1.3em;
+        margin-bottom: 0.6em;
+    }
+
+    .container__btn {
+        padding: 0.4em 4em;
+        font-size: 1.3em;
+        margin: 0.8em;
+    }
+
+    .container__result-title {
+        font-size: 1.5em;
+        margin: 0.8em 0 0.5em;
+    }
+
+    .container__result-text {
+        font-size: 2em;
+    }
+
+    .items {
+        font-size: 1.4em;
+        font-weight: bold;
+    }
 }
