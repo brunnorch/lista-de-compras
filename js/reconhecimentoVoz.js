@@ -7,10 +7,11 @@ const item = document.getElementById('addItem');
 
 button.addEventListener('click', () => {
     recognition.start();
+    recognition.addEventListener('result', onSpeak)
 })
 
-recognition.onresult = (e) => {
-    const result = e.results[0][0].transcript;
+function onSpeak(item) {
+    const result = item.results[0][0].transcript;
     showResult(result);
     getResult(result);
 }
@@ -21,4 +22,3 @@ function showResult(result) {
                 <span class="container__result-text">${result}</span>
     `;
 }
-

@@ -26,10 +26,7 @@ function addItem(item) {
     items.classList.add('items');
     items.dataset.id = item.id;
     items.innerHTML += item.item;
-
-    /* ERRO ESTÁ AQUI */
     items.appendChild(buttonDelete(item.id)); 
-
     lista.appendChild(items);
 }
 
